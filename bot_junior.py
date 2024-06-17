@@ -33,38 +33,49 @@ def warp():
 
 def walk():
     time.sleep(0.1)
-    pydirectinput.keyDown('d')
-    time.sleep(0.2)
-    pydirectinput.keyUp('d')
-    pydirectinput.keyDown('s')
-    if keyboard.is_pressed('q'):
-        exit()
-    time.sleep(0.3)
+    pydirectinput.keyDown('w')
+    time.sleep(0.35)
+    pydirectinput.keyUp('w')
     pydirectinput.keyDown('a')
+    time.sleep(5)
+    pydirectinput.keyUp('a')
+    pydirectinput.keyDown('w')
+    time.sleep(2)
+    pydirectinput.keyUp('w')
+    pydirectinput.keyDown('d')
+    time.sleep(1.8)
+    pydirectinput.keyUp('d')
+    pydirectinput.keyDown('w')
     time.sleep(3)
-    pydirectinput.keyUp('a')
-    pydirectinput.keyUp('s')
-    pydirectinput.keyDown('w')
-    time.sleep(4.4)
+    pydirectinput.keyDown('space')
+    time.sleep(0.02)
+    pydirectinput.keyUp('space')
+    time.sleep(3)
+    pydirectinput.keyDown('space')
+    time.sleep(0.02)
+    pydirectinput.keyUp('space')
+    time.sleep(3)
     pydirectinput.keyUp('w')
-
     pydirectinput.keyDown('a')
-    time.sleep(2)
-    pydirectinput.keyDown('w')
-    time.sleep(2)
+    pydirectinput.keyDown('s')
+    time.sleep(0.25)
+    pydirectinput.keyDown('space')
+    time.sleep(0.02)
+    pydirectinput.keyUp('space')
+    time.sleep(0.25)
+    pydirectinput.keyUp('s')
+    time.sleep(0.5)
+    pydirectinput.keyDown('space')
+    time.sleep(0.02)
+    pydirectinput.keyUp('space')
+    time.sleep(1)
     pydirectinput.keyUp('a')
-    pydirectinput.keyUp('w')
+
+
     if keyboard.is_pressed('q'):
         exit()
 
-    pydirectinput.keyDown('d')
-    time.sleep(0.6)
-    pydirectinput.keyUp('d')
-    pydirectinput.keyDown('w')
-    time.sleep(2.4)
-    pydirectinput.keyUp('w')
-
-    for i in range(9):
+    for i in range(6):
         pydirectinput.keyDown('a')
         pydirectinput.keyDown('w')
         time.sleep(0.1)
@@ -90,7 +101,7 @@ def walk():
     time.sleep(1)
     pydirectinput.keyUp('d')
 
-    if not (pyautogui.pixel(522, 792)[0] <= 15 and pyautogui.pixel(522, 792)[1] <= 15 and pyautogui.pixel(522, 792)[2] <= 15 and pyautogui.pixel(498, 836) == (255, 255, 255)):
+    if not (pyautogui.pixel(522, 792)[0] <= 20 and pyautogui.pixel(522, 792)[1] <= 15 and pyautogui.pixel(522, 792)[2] <= 15 and pyautogui.pixel(498, 836) == (255, 255, 255)):
         pydirectinput.keyDown('s')
         time.sleep(0.3)
         pydirectinput.keyUp('s')
